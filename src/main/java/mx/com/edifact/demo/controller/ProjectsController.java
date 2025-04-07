@@ -13,14 +13,10 @@ import org.springframework.web.bind.annotation.GetMapping;
  * @author rgarcia
  */
 @Controller
-public class HomeController {
+public class ProjectsController {
     
-    @GetMapping({"/", "/index"})
+    @GetMapping({"/projects"})
     public String index() {
-        return "index";
-    }
-    @GetMapping({"/contact"})
-    public String contact() {
-        return "contact";
+        return "projects";
     }
 }
