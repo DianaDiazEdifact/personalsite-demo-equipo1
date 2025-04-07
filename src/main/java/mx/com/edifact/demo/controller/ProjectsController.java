@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ProjectsController {
     
-    @GetMapping({"/", "/projects"})
+    @GetMapping({"/projects"})
     public String index() {
         return "projects";
     }
